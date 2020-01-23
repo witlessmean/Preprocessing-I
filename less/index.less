@@ -21,8 +21,9 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
+	border: 1px solid black; 
+	font-family: 'Karla', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -30,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1; 
 }
 ol, ul {
 	list-style: none;
@@ -50,10 +51,168 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%; 
+	
 }
 
+h1 { 
+	font-family: 'Alegreya', serif;
+	font-size: 2rem;
+}
+
+h2 { 
+	font-family: 'Alegreya', serif;
+	font-size: 1.5rem;
+}
+
+
+a, nav { 
+	text-decoration: none;
+	color: black;
+}
+
+a:hover { 
+	background-color: @charRed; 
+	transition: ease 1s;
+}
+
+
+// id's //
+
+#body-id { 
+	width: 1200px;
+	font-family: 'Karla', sans-serif;
+	font-size: 1rem;
+	margin: 0 auto; 
+	background-color: @lightTan;
+}
+
+
+
+// end of id's // 
+
+@media(max-width: 800px) { .intro-section {
+	background-color: @charRed; }
+
+// classes // 
+
+.top-nav {
+	 margin: 0.2vw; 
+	 padding: 0.2vw; 
+	 text-decoration: none; 
+	 
+	}
+
+.nav-container { 
+	display: flex;
+	justify-content: space-around;
+	background: @lightRed;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom: 2px solid @charRed;
+	font-size: 1.3rem;
+	}
+
+.intro-section {
+	.flexer();
+	.border();
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	background-color: @tan;
+	font-size: 1.5rem;
+	
+}
+
+.skills-section {
+	.flexer();
+	.border();
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	background-color: @lightRed;
+	font-size: 1.5rem;
+}
+
+.contact-section {
+	.flexer();
+	.border();
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	background-color: @grey;
+}
+
+.contact-section-items { 
+	display: flex;
+	height: 50px;
+	width: 140px; 
+	background-color: @lightRed;
+	border-radius: 8px;
+	border: solid 1px @charRed;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	.top-nav()
+		}
+
+.my-img { 
+	width: 30%;
+	.border();
+	}
+
+.contact-section-items:hover { 
+	background-color: @charRed; 
+	transition: ease 1s;
+	border: dashed black 2px;
+	}
+
+//end of classes //
+
+
+
+
+
+// variables // 
+
+/* color scheme */
+
+@lightTan: #EAE7DC;
+@tan: #D8C3A5;
+@grey: #8E8D8A;
+@lightRed: #E98074;
+@charRed: #E85A4F;
+
+/* end of color scheme */
+
+// end of variables // 
+
+
+
+
+
+// mix ins //
+
+.flexer {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1vw 1vw;
+	
+}
+
+.border {
+	border-radius: 8px;
+}
+
+.top-nav {
+	margin: 0.2vw; 
+	padding: 0.2vw; 
+	text-decoration: none; 
+   }
+	
+
+//end of mix ins // 
