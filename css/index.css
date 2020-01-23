@@ -152,11 +152,6 @@ a:hover {
   background-color: #E85A4F;
   transition: ease 1s;
 }
-.contact-section-items:hover {
-  background-color: #E85A4F;
-  transition: ease 1s;
-  border: dashed black 2px;
-}
 #body-id {
   width: 1200px;
   font-family: 'Karla', sans-serif;
@@ -165,8 +160,7 @@ a:hover {
   background-color: #EAE7DC;
 }
 @media (max-width: 800px) {
-  width: 30%;
-  border-radius: 8px;
+  background-color: #E85A4F;
 }
 .top-nav {
   margin: 0.2vw;
@@ -231,6 +225,11 @@ a:hover {
 .my-img {
   width: 30%;
   border-radius: 8px;
+}
+.contact-section-items:hover {
+  background-color: #E85A4F;
+  transition: ease 1s;
+  border: dashed black 2px;
 }
 /* color scheme */
 /* end of color scheme */

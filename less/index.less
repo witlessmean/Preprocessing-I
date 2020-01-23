@@ -95,8 +95,7 @@ a:hover {
 
 // end of id's // 
 
-@media(max-width: 800px) { .intro-section {
-	background-color: @charRed; }
+@media @tablet{.intro-section{background-color:@charRed}
 
 // classes // 
 
@@ -157,8 +156,8 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	font-size: 1rem;
-	.top-nav()
-		}
+	.top-nav();
+	}
 
 .my-img { 
 	width: 30%;
@@ -186,6 +185,7 @@ a:hover {
 @grey: #8E8D8A;
 @lightRed: #E98074;
 @charRed: #E85A4F;
+@tablet: ~"(max-width: 800px)";
 
 /* end of color scheme */
 
@@ -201,7 +201,6 @@ a:hover {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 1vw 1vw;
-	
 }
 
 .border {
