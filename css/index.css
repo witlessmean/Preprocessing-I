@@ -131,6 +131,19 @@ table {
 * {
   box-sizing: border-box;
 }
+.flexer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1vw 1vw;
+}
+.border {
+  border-radius: 8px;
+}
+.top-nav {
+  margin: 0.2vw;
+  padding: 0.2vw;
+  text-decoration: none;
+}
 html,
 body {
   height: 100%;
@@ -158,9 +171,6 @@ a:hover {
   font-size: 1rem;
   margin: 0 auto;
   background-color: #EAE7DC;
-}
-@media (max-width: 800px) {
-  background-color: #E85A4F;
 }
 .top-nav {
   margin: 0.2vw;
@@ -231,18 +241,8 @@ a:hover {
   transition: ease 1s;
   border: dashed black 2px;
 }
-/* color scheme */
-/* end of color scheme */
-.flexer {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1vw 1vw;
-}
-.border {
-  border-radius: 8px;
-}
-.top-nav {
-  margin: 0.2vw;
-  padding: 0.2vw;
-  text-decoration: none;
+@media (max-width: 800px) {
+  .intro-section {
+    background-color: #E85A4F;
+  }
 }

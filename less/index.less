@@ -53,6 +53,36 @@ table {
 * {
 	box-sizing: border-box;
 }
+// less variables // 
+
+@lightTan: #EAE7DC;
+@tan: #D8C3A5;
+@grey: #8E8D8A;
+@lightRed: #E98074;
+@charRed: #E85A4F;
+@tablet: ~"(max-width: 800px)";
+
+//end of less variables//
+
+// mix-ins // 
+
+.flexer {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1vw 1vw;
+}
+
+.border {
+	border-radius: 8px;
+}
+
+.top-nav {
+	margin: 0.2vw; 
+	padding: 0.2vw; 
+	text-decoration: none; 
+   }
+	
+//end of mix-ins //
 
 html, body {
 	height: 100%; 
@@ -95,7 +125,7 @@ a:hover {
 
 // end of id's // 
 
-@media @tablet{.intro-section{background-color:@charRed}
+
 
 // classes // 
 
@@ -174,44 +204,12 @@ a:hover {
 
 
 
-
-
-// variables // 
-
-/* color scheme */
-
-@lightTan: #EAE7DC;
-@tan: #D8C3A5;
-@grey: #8E8D8A;
-@lightRed: #E98074;
-@charRed: #E85A4F;
-@tablet: ~"(max-width: 800px)";
-
-/* end of color scheme */
-
-// end of variables // 
-
-
-
-
-
-// mix ins //
-
-.flexer {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 1vw 1vw;
+@media @tablet{
+	.intro-section {background-color:@charRed}
 }
 
-.border {
-	border-radius: 8px;
-}
 
-.top-nav {
-	margin: 0.2vw; 
-	padding: 0.2vw; 
-	text-decoration: none; 
-   }
-	
 
-//end of mix ins // 
+
+
+
