@@ -1,1 +1,248 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 1px solid black;
+  font-family: 'Karla', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1 {
+  font-family: 'Alegreya', serif;
+  font-size: 2rem;
+}
+h2 {
+  font-family: 'Alegreya', serif;
+  font-size: 1.5rem;
+}
+a,
+nav {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  background-color: #E85A4F;
+  transition: ease 1s;
+}
+#body-id {
+  width: 1200px;
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  margin: 0 auto;
+  background-color: #EAE7DC;
+}
+@media (max-width: 800px) {
+  background-color: #E85A4F;
+}
+.top-nav {
+  margin: 0.2vw;
+  padding: 0.2vw;
+  text-decoration: none;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  background: #E98074;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 2px solid #E85A4F;
+  font-size: 1.3rem;
+}
+.intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1vw 1vw;
+  border-radius: 8px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #D8C3A5;
+  font-size: 1.5rem;
+}
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1vw 1vw;
+  border-radius: 8px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #E98074;
+  font-size: 1.5rem;
+}
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1vw 1vw;
+  border-radius: 8px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #8E8D8A;
+}
+.contact-section-items {
+  display: flex;
+  height: 50px;
+  width: 140px;
+  background-color: #E98074;
+  border-radius: 8px;
+  border: solid 1px #E85A4F;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin: 0.2vw;
+  padding: 0.2vw;
+  text-decoration: none;
+}
+.my-img {
+  width: 30%;
+  border-radius: 8px;
+}
+.contact-section-items:hover {
+  background-color: #E85A4F;
+  transition: ease 1s;
+  border: dashed black 2px;
+}
+/* color scheme */
+/* end of color scheme */
+.flexer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1vw 1vw;
+}
+.border {
+  border-radius: 8px;
+}
+.top-nav {
+  margin: 0.2vw;
+  padding: 0.2vw;
+  text-decoration: none;
+}
